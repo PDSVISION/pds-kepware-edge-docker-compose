@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  platform:
+    image: ghcr.io/pdsvision/kepware-edge:1.6.250.0
+    ports:
+      - "57513:57513"
+      - "49330:49330"
+    environment:
+      - "EDGEADMINPW=kepwareedgevision"
